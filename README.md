@@ -9,10 +9,6 @@ models for **gate allocation** and **flight‑disruption risk**.
 🌐 **Landing page (GitHub Pages):** <https://valentina-alto.github.io/rayfin-airport-ops/>
 &nbsp;·&nbsp; 📦 **Repo:** <https://github.com/Valentina-Alto/rayfin-airport-ops>
 
-> The landing page lives in [`docs/index.html`](docs/index.html). To publish it,
-> enable GitHub Pages on this repo: **Settings → Pages → Build from a branch →
-> `main` / `/docs`**.
-
 ---
 
 ## About the app

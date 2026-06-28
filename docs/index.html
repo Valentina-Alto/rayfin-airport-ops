@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>AeroOps · Airport Logistics Command — built on Rayfin &amp; Microsoft Fabric</title>
-<meta name="description" content="A demo airport logistics management app built on the Rayfin SDK and deployed as a Microsoft Fabric App, with predictive models for gate allocation and disruption risk." />
+<title>Microsoft Fabric Apps &amp; Rayfin — a new way to build enterprise applications</title>
+<meta name="description" content="Learn what a Microsoft Fabric App is and how the Rayfin SDK lets you build, deploy and govern enterprise applications natively inside Microsoft Fabric." />
 <style>
   :root{
     --bg:#0a0f1c; --bg2:#0d1424; --panel:#111a2e; --panel2:#0f1830;
@@ -164,101 +164,37 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <div class="brand"><span class="logo">✈️</span> AeroOps</div>
+    <div class="brand"><span class="logo">▲</span> Fabric Apps · Rayfin</div>
     <nav class="nav-links">
-      <a href="#app">The app</a>
       <a href="#fabric">Fabric App</a>
       <a href="#rayfin">Rayfin</a>
       <a href="#architecture">Architecture</a>
       <a href="#links">Learn more</a>
     </nav>
-    <a class="btn primary" href="https://github.com/Valentina-Alto/rayfin-airport-ops">View on GitHub</a>
+    <a class="btn primary" href="https://github.com/microsoft/rayfin">View Rayfin on GitHub</a>
   </div>
 </header>
 
 <!-- HERO -->
 <div class="hero wrap">
-  <div class="eyebrow">Airport Logistics Command</div>
-  <h1>Operations, gates, fleet &amp; cargo —<br><span class="grad">running natively inside Microsoft Fabric</span></h1>
-  <p class="lead">AeroOps is a demo airport logistics management app built with the
-    <strong>Rayfin</strong> SDK and deployed as a <strong>Microsoft Fabric App</strong>.
-    It combines a live operational dashboard with predictive models for gate allocation
-    and flight‑disruption risk.</p>
+  <div class="eyebrow">Microsoft Fabric Apps · Rayfin SDK</div>
+  <h1>Enterprise applications —<br><span class="grad">running natively inside Microsoft Fabric</span></h1>
+  <p class="lead">A <strong>Microsoft Fabric App</strong> makes your application a native Fabric
+    workload, and the <strong>Rayfin</strong> SDK folds the repetitive backend — auth, APIs,
+    database, deployment — into that managed app. Model your data, ship your logic, deploy
+    with one command.</p>
   <div class="cta">
-    <a class="btn primary" href="https://github.com/Valentina-Alto/rayfin-airport-ops">⭐ Explore the code</a>
-    <a class="btn ghost" href="#app">See what it does</a>
+    <a class="btn primary" href="https://aka.ms/rayfin">⭐ Discover Rayfin</a>
+    <a class="btn ghost" href="#fabric">Learn the concepts</a>
   </div>
   <div class="pills">
-    <span class="pill">React + Vite</span>
+    <span class="pill">Native Fabric workload</span>
     <span class="pill">Rayfin BaaS</span>
     <span class="pill">Fabric SQL</span>
-    <span class="pill">Predictive models</span>
-    <span class="pill">Interactive apron map</span>
+    <span class="pill">GraphQL + auth, managed</span>
+    <span class="pill">Deploy with <span class="mono">rayfin up</span></span>
   </div>
 </div>
-
-<!-- THE APP -->
-<section id="app">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">The application</div>
-      <h2>An operations command center for AERO International</h2>
-      <p>Six views over a deterministic, in‑browser demo dataset — so it always renders —
-        backed by a Rayfin data model that is ready to seed and deploy.</p>
-    </div>
-
-    <div class="grid g2" style="align-items:start">
-      <!-- Wireframe mock -->
-      <div class="mock" aria-hidden="true">
-        <div class="bar">
-          <span class="logo" style="width:22px;height:22px;border-radius:6px;display:inline-grid;place-items:center;background:linear-gradient(135deg,var(--sky),var(--indigo));font-size:12px">✈️</span>
-          <span style="font-size:12px;font-weight:600">AeroOps · Logistics Command</span>
-          <span style="margin-left:auto" class="dim mono" >12:42:07</span>
-        </div>
-        <div class="tabs">
-          <div class="tab active"></div><div class="tab"></div><div class="tab"></div>
-          <div class="tab"></div><div class="tab"></div><div class="tab"></div>
-        </div>
-        <div class="kpis">
-          <div class="kpi"></div><div class="kpi"></div><div class="kpi"></div>
-          <div class="kpi"></div><div class="kpi"></div><div class="kpi"></div>
-        </div>
-        <div class="body">
-          <div class="map">
-            <div class="runway" style="top:14px"></div>
-            <div class="runway" style="bottom:14px"></div>
-            <div class="term" style="top:64px;left:24%;width:52%;height:20px"></div>
-            <div class="term" style="bottom:60px;left:30%;width:40%;height:18px"></div>
-            <span class="dot" style="top:54px;left:30%;background:var(--emerald)"></span>
-            <span class="dot" style="top:54px;left:42%;background:var(--sky)"></span>
-            <span class="dot" style="top:54px;left:56%;background:var(--amber)"></span>
-            <span class="dot" style="top:54px;left:66%;background:var(--sky)"></span>
-            <span class="dot" style="bottom:50px;left:38%;background:var(--sky)"></span>
-            <span class="dot" style="bottom:50px;left:54%;background:var(--emerald)"></span>
-          </div>
-          <div class="side">
-            <div class="scard"></div>
-            <div class="scard"></div>
-            <div class="scard"></div>
-          </div>
-        </div>
-        <div class="row" style="width:100%"></div>
-        <div class="row" style="width:92%"></div>
-        <div class="row" style="width:96%"></div>
-      </div>
-
-      <!-- Feature cards -->
-      <div class="grid g2">
-        <div class="card feature"><div class="ico">🗺️</div><h3>Live airfield map</h3><p>Interactive SVG apron with terminals, piers, runways, taxiways and stands colour‑coded by status. Click a gate for detail.</p></div>
-        <div class="card feature"><div class="ico">🛫</div><h3>Fleet &amp; flights</h3><p>Aircraft inventory with live flight assignment, plus a real‑time arrivals &amp; departures board.</p></div>
-        <div class="card feature"><div class="ico">📦</div><h3>Cargo &amp; gates</h3><p>Tonnage by category, priority mix, shipment manifest, and stand utilisation by terminal.</p></div>
-        <div class="card feature"><div class="ico">👷</div><h3>Workforce</h3><p>Headcount by department, shift coverage and the on‑duty roster across airside zones.</p></div>
-        <div class="card feature"><div class="ico">🎯</div><h3>Gate allocation AI</h3><p>Constraint‑aware optimizer suggests conflict‑free stands with a confidence score and reasons.</p></div>
-        <div class="card feature"><div class="ico">⚠️</div><h3>Disruption risk AI</h3><p>Logistic model scores weather, congestion &amp; turnaround load into delay probability and predicted minutes.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- 01 — FABRIC APP -->
 <section id="fabric">
@@ -408,7 +344,7 @@
       </div>
 
       <div class="grid" style="gap:14px">
-        <div class="card feature"><h3 style="color:var(--teal)">Presentation</h3><p>Any UI technology can consume a Fabric App. AeroOps uses React + Vite.</p></div>
+        <div class="card feature"><h3 style="color:var(--teal)">Presentation</h3><p>Any UI technology — React, Angular, Next.js, Power Apps or mobile — can consume a Fabric App.</p></div>
         <div class="card feature"><h3 style="color:var(--teal)">Application</h3><p>Rayfin generates and manages the backend services — auth, GraphQL, logic.</p></div>
         <div class="card feature"><h3 style="color:var(--teal)">Operational data</h3><p>Managed SQL optimized for transactional workloads.</p></div>
         <div class="card feature"><h3 style="color:var(--teal)">Fabric platform</h3><p>Apps immediately benefit from analytics, AI, governance and OneLake.</p></div>
@@ -450,17 +386,16 @@
 
 <footer>
   <div class="wrap">
-    <div class="brand"><span class="logo" style="width:26px;height:26px;border-radius:7px;font-size:13px">✈️</span> AeroOps · Airport Logistics Command</div>
+    <div class="brand"><span class="logo" style="width:26px;height:26px;border-radius:7px;font-size:13px">▲</span> Microsoft Fabric Apps · Rayfin</div>
     <div class="badges">
-      <span class="badge">Built on Rayfin</span>
       <span class="badge">Microsoft Fabric App</span>
-      <span class="badge">React + Vite</span>
-      <span class="badge">Demo / mock data</span>
+      <span class="badge">Rayfin SDK</span>
+      <span class="badge">Native Fabric workload</span>
+      <span class="badge">Deploy with rayfin up</span>
     </div>
-    <p class="disclaimer">A community demo for illustrative purposes. “AERO International”, its flights, fleet,
-      cargo and staff are fictional and generated from a deterministic mock dataset.
+    <p class="disclaimer">An educational overview of Microsoft Fabric Apps and the Rayfin SDK.
       Microsoft, Microsoft Fabric and Rayfin are referenced for educational context;
-      this project is not an official Microsoft product.</p>
+      this page is not an official Microsoft product.</p>
   </div>
 </footer>
 
