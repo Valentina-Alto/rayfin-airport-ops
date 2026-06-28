@@ -6,6 +6,7 @@ import { GatesTab } from '@/components/dashboard/GatesTab';
 import { OverviewTab } from '@/components/dashboard/OverviewTab';
 import { PredictionsTab } from '@/components/dashboard/PredictionsTab';
 import { WorkforceTab } from '@/components/dashboard/WorkforceTab';
+import { SeedDatabaseButton } from '@/components/SeedDatabaseButton';
 import { fmtClock } from '@/components/dashboard/primitives';
 import { useAirportData } from '@/hooks/useAirportData';
 import { useAuth } from '@/hooks/AuthContext';
@@ -52,6 +53,7 @@ export function HomePage() {
           </div>
 
           <div className="flex items-center gap-4">
+            <SeedDatabaseButton />
             <div className="hidden items-center gap-2 rounded-lg border border-slate-800 bg-slate-800/40 px-3 py-1.5 sm:flex">
               <span className="text-lg leading-none">{WEATHER_ICON[data.conditions.condition]}</span>
               <span className="text-xs text-slate-300">
